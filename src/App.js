@@ -17,7 +17,7 @@ function App() {
           <li><Link to='/newproject'>New Project</Link></li>
         </ul>
       </nav>
-      <Container>
+      <Container customClass="minHeight">
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/contact" element={<Contact />} />
@@ -25,6 +25,7 @@ function App() {
           <Route exact path="/newproject" element={<NewProject />} />
         </Routes>
       </Container>
+      <p>Footer</p>
     </Router>
   );
 }
