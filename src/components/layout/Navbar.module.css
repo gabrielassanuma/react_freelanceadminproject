@@ -1,4 +1,34 @@
 .imageNavBar {
   width: 100px;
   height: 100px;
+  margin: 45px 0px 10px 0px;
+}
+
+.listNavBar{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navBar{
+  display: flex;
+  justify-content: space-around;
+  background-color: #c5b3ed;
+  font-size: 1.5em;
+  height: 20vh;
+}
+
+.itemNavBar {
+  text-decoration: none;
+  padding: 80px;
+}
+
+.itemNavBar a{
+  color: #f8f8f8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.itemNavBar a:hover{
+  color: black;
 }
