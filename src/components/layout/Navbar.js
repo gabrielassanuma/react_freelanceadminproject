@@ -9,15 +9,25 @@ import styles from './Navbar.module.css'
 
 function Navbar() {
   return (
-    <nav>
+    <nav className={styles.navBar}>
       <Container>
-        <Link to='/'>
-          <img src={logo} alt="logo" className={styles.imageNavBar} />
-        </Link>
-        <Link to='/'>Home</Link>
-        <Link to='/contact'>Contact</Link>
-        <Link to='/company'>Company</Link>
-        <Link to='/newproject'>New Project</Link>
+          <Link to='/'>
+            <img src={logo} alt="logo" className={styles.imageNavBar} />
+          </Link>
+        <ul className={styles.listNavBar}>
+          <li className={styles.itemNavBar}>
+            <Link to='/'>Home</Link>
+          </li>
+          <li className={styles.itemNavBar}>
+            <Link to='/contact'>Contact</Link>
+          </li>
+          <li className={styles.itemNavBar}>
+            <Link to='/company'>Company</Link>
+          </li>
+          <li className={styles.itemNavBar}>
+            <Link to='/newproject'>New Project</Link>
+          </li>
+        </ul>
       </Container>
       </nav>
   )
