@@ -1,0 +1,15 @@
+.formControlSelect {
+  width: 100%
+}
+
+.formControlSelect label{
+  font-weight: bold;
+}
+
+.formControlSelect select {
+  width: 90%;
+  height: 30px;
+  margin: 4px auto;
+  background-color: #DDDBDB;
+  border: none;
+}
