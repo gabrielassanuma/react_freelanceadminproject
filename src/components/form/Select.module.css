@@ -1,12 +1,12 @@
-.formControlInput {
+.formControlSelect {
   width: 100%
 }
 
-.formControlInput label{
+.formControlSelect label{
   font-weight: bold;
 }
 
-.formControlInput input {
+.formControlSelect select {
   width: 90%;
   height: 30px;
   margin: 4px auto;
