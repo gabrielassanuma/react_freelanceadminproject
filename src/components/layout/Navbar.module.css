@@ -1,7 +1,7 @@
 .imageNavBar {
   width: 100px;
   height: 100px;
-  margin: 45px 0px 10px 0px;
+  margin: 25px 0px 10px 0px;
 }
 
 .listNavBar{
@@ -15,7 +15,7 @@
   justify-content: space-around;
   background-color: #c5b3ed;
   font-size: 1.5em;
-  height: 20vh;
+  height: 16vh;
 }
 
 .itemNavBar {

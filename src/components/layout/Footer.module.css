@@ -1,0 +1,22 @@
+.footer{
+  height: 9vh;
+  width: 100vw;
+  background-color: darkgrey;
+}
+
+.listFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemFooter{
+  list-style: none;
+}
+
+.iconFooter {
+  width: 30px;
+  height: 30px;
+  margin: 20px 40px;
+}
