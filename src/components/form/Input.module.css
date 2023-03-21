@@ -1,0 +1,13 @@
+.formControlInput {
+  width: 100%
+}
+
+.formControlInput label{
+  font-weight: bold;
+}
+
+.formControlInput input {
+  width: 90%;
+  height: 30px;
+  margin: 4px auto;
+}
