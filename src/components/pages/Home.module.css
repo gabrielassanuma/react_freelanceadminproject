@@ -1,0 +1,19 @@
+.containerHome {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.containerHome h1{
+  margin-bottom: 20px;
+}
+
+.containerHome h3{
+  margin-bottom: 20px;
+}
+
+.containerHome img{
+  margin-bottom: 40px;
+}

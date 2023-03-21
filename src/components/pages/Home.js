@@ -5,7 +5,7 @@ import LinkButton from '../layout/LinkButton'
 
 function Home() {
   return (
-    <section>
+    <section className={styles.containerHome}>
       <h1>Welcome to Freelancer Management System</h1>
       <h3>Save money, organize your projects in a super simple way</h3>
       <img src={homepic} alt="Some money" />
