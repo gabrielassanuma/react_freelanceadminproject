@@ -4,9 +4,23 @@ import Input from '../form/Input'
 import Select from '../form/Select'
 import SubmitButton from '../form/SubmitButton'
 
-function ProjectForm({ btnText }) {
+import { useState } from 'react'
+
+function ProjectForm({ handleSubmit, btnText, projectData }) {
+
+  const[project, setProject] = useState(projectData || [])
+
+  const submit = (e) => {
+    e.preventDefault()
+    handleSubmit(project)
+  }
+
+  function handleChange(e) {
+    setProject({ ...project, [e.target.name]: e.target.value })
+  }
+
   return (
-    <form className={styles.containerProjectForm}>
+    <form onSubmit={submit} className={styles.containerProjectForm}>
       <div>
         <Input type="text" text="Project name:" name="name" placeholder="Insert the name of project" />
       </div>

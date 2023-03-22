@@ -28,7 +28,7 @@ function NewProject() {
     <div className={styles.containerNewProject}>
       <h1>Create a New Project</h1>
       <h3>Firstly create your new project and after that add service</h3>
-      <ProjectForm btnText="Create New Project"/>
+      <ProjectForm handleSubmit={createPost} btnText="Create New Project"/>
     </div>
   )
 }
