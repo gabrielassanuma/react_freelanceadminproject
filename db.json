@@ -1,0 +1,25 @@
+{
+  "projects": [],
+  "projects_type": [
+    {
+      "id": 1,
+      "type": "Design"
+    },
+    {
+      "id": 2,
+      "type": "Frontend"
+    },
+    {
+      "id": 3,
+      "type": "Backend"
+    },
+    {
+      "id": 4,
+      "type": "Devops"
+    },
+    {
+      "id": 1,
+      "type": "Management"
+    }
+  ]
+}
