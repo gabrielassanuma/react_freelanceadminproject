@@ -20,7 +20,7 @@ function Select({text, name, handleOnChange, value}) {
   return (
     <div className={styles.formControlSelect}>
       <label htmlFor={name}>{text}</label>
-      <select name={name} id={name} handleOnChange={handleOnChange} value={value || "" }>
+      <select name={name} id={name} onChange={handleOnChange} value={value || "" }>
         <option>Select one option:</option>
         {projectTypes.map(projectType => {
           return <option key={projectType.id} value={projectType.id}>{projectType.type}</option>

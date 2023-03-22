@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 function ProjectForm({ handleSubmit, btnText, projectData }) {
 
-  const[project, setProject] = useState(projectData || [])
+  const[project, setProject] = useState(projectData || {} )
 
   const submit = (e) => {
     e.preventDefault()
@@ -22,7 +22,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
   function handleCategory(e) {
     setProject({ ...project, category: {
       id: e.target.value,
-      name: e.target.options[e.targetselectedIndex].text,
+      name: e.target.options[e.target.selectedIndex].text
 
     } })
   }
@@ -30,13 +30,13 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
   return (
     <form onSubmit={submit} className={styles.containerProjectForm}>
       <div>
-        <Input type="text" text="Project name:" name="name" placeholder="Insert the name of project" handleOnChange={handleChange} />
+        <Input type="text" text="Project name:" name="name" placeholder="Insert the name of project" handleOnChange={handleChange} value={project.name ? project.name : ''} />
       </div>
       <div>
-        <Input type="number" text="Project budget:" name="budget" placeholder="Insert project budget" handleOnChange={handleChange}  />
+        <Input type="number" text="Project budget:" name="budget" placeholder="Insert project budget" handleOnChange={handleChange} value={project.budget? project.budget : ''}  />
       </div>
       <div>
-        <Select name="category_id" text="Select category :"  handleOnChange={handleCategory}/>
+        <Select name="category_id" text="Select category :"  handleOnChange={handleCategory} value={project.category ? project.category.id : ''}/>
       </div>
       <SubmitButton text={btnText}/>
     </form>
