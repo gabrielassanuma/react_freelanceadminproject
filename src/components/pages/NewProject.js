@@ -11,17 +11,18 @@ function NewProject() {
   function createPost(project) {
     project.cost = 0
     project.services = []
-
+  
     fetch("http://localhost:3004/projects", {
       method: "POST",
       headers: {
         'content-type': 'application/json'
-
       },
       body: JSON.stringify(project),  
-    }).then((resp => resp.json)
-    .then((data) => console.log(data))
-    ).catch(error => console.log(error))
+    }).then(resp => resp.json())
+      .then(data =>
+        console.log(data),
+        history('/projects'))
+      .catch(error => console.log(error))
   }
 
   return (

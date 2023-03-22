@@ -13,6 +13,90 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "name": "teste",
+      "budget": "10000",
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "ok",
+      "budget": "0",
+      "category": {
+        "id": "2",
+        "name": "Frontend"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "ok",
+      "budget": "1000",
+      "category": {
+        "id": "4",
+        "name": "Devops"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "name": "ok",
+      "budget": "1000",
+      "category": {
+        "id": "4",
+        "name": "Devops"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
+    },
+    {
+      "name": "pizzashopapp",
+      "budget": "12000",
+      "category": {
+        "id": "3",
+        "name": "Backend"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 7
+    },
+    {
+      "name": "Gab",
+      "budget": "890",
+      "category": {
+        "id": "2",
+        "name": "Frontend"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 8
+    },
+    {
+      "name": "Gab",
+      "budget": "890",
+      "category": {
+        "id": "2",
+        "name": "Frontend"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 9
+    },
+    {
+      "name": "testetest",
+      "budget": "1234",
+      "category": {
+        "id": "2",
+        "name": "Frontend"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 10
     }
   ],
   "projects_type": [
