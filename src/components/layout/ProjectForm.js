@@ -4,7 +4,7 @@ import Input from '../form/Input'
 import Select from '../form/Select'
 import SubmitButton from '../form/SubmitButton'
 
-function ProjectForm() {
+function ProjectForm({ btnText }) {
   return (
     <form className={styles.containerProjectForm}>
       <div>
@@ -16,7 +16,7 @@ function ProjectForm() {
       <div>
         <Select name="category_id" text="Select category :"  />
       </div>
-      <SubmitButton text="Submit"/>
+      <SubmitButton text={btnText}/>
     </form>
   )
 }
