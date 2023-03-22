@@ -3,7 +3,7 @@ import styles from './Select.module.css'
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 
-function Select({text, name, option, handleOnChange, value}) {
+function Select({text, name, handleOnChange, value}) {
 
   const [projectTypes, setProjectTypes] = useState([])
 
@@ -20,7 +20,7 @@ function Select({text, name, option, handleOnChange, value}) {
   return (
     <div className={styles.formControlSelect}>
       <label htmlFor={name}>{text}</label>
-      <select name={name} id={name}>
+      <select name={name} id={name} handleOnChange={handleOnChange} value={value || "" }>
         <option>Select one option:</option>
         {projectTypes.map(projectType => {
           return <option key={projectType.id} value={projectType.id}>{projectType.type}</option>
